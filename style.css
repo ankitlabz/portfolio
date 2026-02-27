@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0d1117;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0d1117, #161b22);
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.subtitle {
+  margin-top: 10px;
+  color: #58a6ff;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #58a6ff;
+}
+
+.skills span {
+  display: inline-block;
+  background: #161b22;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  background: #58a6ff;
+  color: black;
+}
+
+.card {
+  background: #161b22;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.primary {
+  background: #238636;
+  color: white;
+}
+
+.secondary {
+  border: 1px solid #58a6ff;
+  color: #58a6ff;
+}
+
+.primary:hover {
+  background: #2ea043;
+}
+
+.secondary:hover {
+  background: #58a6ff;
+  color: black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background: #161b22;
+  color: white;
+}

@@ -14,7 +14,7 @@ const certificatesConfig = {
       title: "Paytm — Training & Internship Certificate",
       category: "Internship",
       detail:
-        "One97 Communications (Paytm) · Jul 24, 2025 – Jan 26, 2026 · Tech–Non Dev, DevOps · Trainee T4451",
+        "One97 Communications (Paytm) · Training Jul 24, 2025 – Jan 26, 2026 · Tech–Non Dev, DevOps · T4451 · Issued 16 Feb 2026",
       link: "https://drive.google.com/file/d/19s5sacmgzIVwyz7mxxReDKyGomasgBbP/view?usp=sharing",
     },
   ],

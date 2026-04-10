@@ -1,0 +1,59 @@
+/* Resume toolbar — high-contrast pop-out link above iframe */
+
+.resume-box {
+  position: relative;
+}
+
+.resume-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.resume-popout-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+  color: var(--eerie-black-2);
+  background: var(--orange-yellow-crayola);
+  border: 1px solid hsla(45, 100%, 72%, 0.35);
+  box-shadow: var(--shadow-2);
+  text-decoration: none;
+  transition: var(--transition-1);
+}
+
+.resume-popout-link:hover {
+  color: var(--eerie-black-2);
+  background: hsl(45, 100%, 78%);
+  transform: translateY(-1px);
+}
+
+.resume-popout-link:focus-visible {
+  outline: 2px solid var(--orange-yellow-crayola);
+  outline-offset: 3px;
+}
+
+.resume-frame-wrap {
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--jet);
+  background: hsl(240, 2%, 10%);
+  min-height: 600px;
+}
+
+.resume-frame-wrap iframe {
+  display: block;
+  width: 100%;
+  min-height: 600px;
+  border: none;
+  vertical-align: top;
+}

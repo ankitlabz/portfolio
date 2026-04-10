@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { IonIcon } from "@ionic/react";
+import { openOutline } from "ionicons/icons";
 import LoadingSpinner from "../components/LoadingSpinner";
 import resumeConfig from "../config/resumeConfig";
+import "../assets/css/resume.css";
 
 const Resume = () => {
   const [loading, setLoading] = useState(true);
@@ -15,29 +18,40 @@ const Resume = () => {
         <h2 className="h2 article-title">Resume</h2>
       </header>
 
-      <section className="resume-box" >
+      <section className="resume-box">
+        <div className="resume-toolbar">
+          <a
+            href={resumeConfig.viewUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="resume-popout-link"
+          >
+            <IonIcon icon={openOutline} style={{ fontSize: "1.1rem" }} />
+            Open in Google Drive
+          </a>
+        </div>
+
         {loading && <LoadingSpinner />}
-        
-        <figure>
-          <PdfLoader loading={loading} handleLoad={handleLoad} url={resumeConfig.url} />
+
+        <figure style={{ display: loading ? "none" : "block", margin: 0 }}>
+          <div className="resume-frame-wrap">
+            <PdfLoader handleLoad={handleLoad} url={resumeConfig.url} />
+          </div>
         </figure>
       </section>
     </article>
   );
 };
 
-const PdfLoader = ({ loading, handleLoad, url }) => {
+const PdfLoader = ({ handleLoad, url }) => {
   return (
-    <figure style={{ display: loading ? "none" : "block" }}>
-      <iframe
-        src={url}
-        width="100%"
-        height="600"
-        title="resume"
-        onLoad={handleLoad}
-        style={{ border: "none" }}
-      />
-    </figure>
+    <iframe
+      src={url}
+      width="100%"
+      height="600"
+      title="Resume PDF"
+      onLoad={handleLoad}
+    />
   );
 };
 

@@ -275,7 +275,7 @@
        * #PORTFOLIO, PROJECT 
        */
 
-  .project-img,
+  /* .project-img: fixed height kept for certificate grid; only project banners grow */
   .project-banner-box {
     height: auto;
   }
@@ -425,6 +425,18 @@
 
 .certificate-card-static .project-item-icon-box {
   display: none;
+}
+
+/* Match AWS + Paytm thumbnail crop in certificate grid */
+.certificates-page .certificate-card-btn .project-img {
+  height: 200px;
+}
+
+.certificates-page .certificate-card-btn .project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .certificate-card-btn {

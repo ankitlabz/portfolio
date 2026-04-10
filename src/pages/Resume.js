@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IonIcon } from "@ionic/react";
-import { downloadOutline } from "ionicons/icons";
+import { openOutline } from "ionicons/icons";
 import LoadingSpinner from "../components/LoadingSpinner";
 import resumeConfig from "../config/resumeConfig";
 import "../assets/css/resume.css";
@@ -21,12 +21,13 @@ const Resume = () => {
       <section className="resume-box">
         <div className="resume-toolbar">
           <a
-            href={resumeConfig.downloadUrl}
-            className="resume-download-btn"
-            download="resume.pdf"
+            href={resumeConfig.viewUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="resume-redirect-btn"
           >
-            <IonIcon icon={downloadOutline} className="resume-download-btn__icon" />
-            Download
+            <IonIcon icon={openOutline} className="resume-redirect-btn__icon" />
+            <span>Open in Google Drive</span>
           </a>
         </div>
 

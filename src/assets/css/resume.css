@@ -1,4 +1,4 @@
-/* Resume: download + embedded Drive preview */
+/* Resume: high-contrast external link + embedded preview */
 
 .resume-box {
   position: relative;
@@ -10,41 +10,46 @@
   align-items: center;
   justify-content: flex-end;
   gap: 10px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
-.resume-download-btn {
+.resume-redirect-btn {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 14px;
-  border-radius: 10px;
-  font-size: var(--fs-7);
-  font-weight: var(--fw-500);
-  color: var(--light-gray);
-  background: var(--jet);
-  border: 1px solid hsla(0, 0%, 100%, 0.08);
+  justify-content: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+  letter-spacing: 0.02em;
+  color: hsl(240, 6%, 10%);
+  background: var(--orange-yellow-crayola);
+  border: 2px solid hsla(45, 100%, 85%, 0.5);
+  box-shadow: 0 4px 14px hsla(45, 80%, 40%, 0.25);
   text-decoration: none;
   transition: var(--transition-1);
 }
 
-.resume-download-btn:hover {
-  color: var(--orange-yellow-crayola);
-  border-color: hsla(45, 100%, 72%, 0.35);
-  background: hsl(240, 2%, 18%);
+.resume-redirect-btn:hover {
+  color: hsl(240, 6%, 8%);
+  background: hsl(45, 100%, 72%);
+  border-color: hsla(45, 100%, 90%, 0.7);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px hsla(45, 70%, 35%, 0.35);
 }
 
-.resume-download-btn:focus-visible {
-  outline: 2px solid var(--orange-yellow-crayola);
-  outline-offset: 2px;
+.resume-redirect-btn:focus-visible {
+  outline: 3px solid var(--orange-yellow-crayola);
+  outline-offset: 3px;
 }
 
-.resume-download-btn__icon {
-  font-size: 1.1rem;
-  color: var(--orange-yellow-crayola);
+.resume-redirect-btn__icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
 }
 
-/* Embedded viewer — subtle depth so Drive’s built-in pop-out stays primary */
 .resume-frame-wrap {
   position: relative;
   width: 100%;

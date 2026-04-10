@@ -1,36 +1,23 @@
 const portfolioConfig = {
-  // categories : ["All", "Web design", "Applications", "Web development"],
-  categories : ["All", "DevOps",  "AI", "Github"],
+  categories : ["All", "DevOps", "Cloud", "Full Stack"],
   projects : [
     {
       image: "github.png",
-      title: 'Dashboard',
-      category: 'Github',
-      link: 'https://github.com/NakkaGS/Frontend-Dashboard-1',
+      title: 'GoToKart — Live',
+      category: 'Full Stack',
+      link: 'http://34.227.190.40/',
     },
     {
       image: "github.png",
-      title: 'mkbsd',
-      category: 'Github',
-      link: 'https://github.com/nadimkobeissi/mkbsd',
+      title: 'GoToKart — Repositories',
+      category: 'Full Stack',
+      link: 'https://github.com/orgs/gotokart/repositories',
     },
     {
       image: "argocd.png",
-      title: 'ArgoCD',
+      title: 'GoToKart — Documentation',
       category: 'DevOps',
-      link: 'https://argo-cd.readthedocs.io/en/stable/',
-    },
-    {
-      image: "storm.png",
-      title: 'Co-STORM',
-      category: 'AI',
-      link: 'https://storm.genie.stanford.edu/',
-    },
-    {
-      image: "render.png",
-      title: 'Render',
-      category: 'DevOps',
-      link: 'https://render.com/',
+      link: 'https://gotokart.github.io/docs/',
     },
   ],
 };

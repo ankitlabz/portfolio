@@ -63,19 +63,31 @@ const Sidebar = () => {
         <div className="separator"></div>
 
         <ul className="contacts-list">
-          {contactConfig.map((contact) => (
+          {contactConfig.map((contact) => {
+            const href =
+              contact.title === "Email"
+                ? `mailto:${contact.detail}`
+                : contact.title === "Phone"
+                  ? `tel:${contact.detail.replace(/[^\d+]/g, "")}`
+                  : null;
+            return (
             <li className="contact-item" key={contact.title}>
               <div className="icon-box">
                 <IonIcon icon={contact.logo} />
               </div>
               <div className="contact-info">
                 <p className="contact-title">{contact.title}</p>
-                <a href="mailto:manishdotkr@gmail.com" className="contact-link">
-                  {contact.detail}
-                </a>
+                {href ? (
+                  <a href={href} className="contact-link">
+                    {contact.detail}
+                  </a>
+                ) : (
+                  <span className="contact-link">{contact.detail}</span>
+                )}
               </div>
             </li>
-          ))}
+            );
+          })}
         </ul>
 
         <div className="separator"></div>

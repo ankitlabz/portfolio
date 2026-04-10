@@ -1,32 +1,27 @@
 const aboutConfig = {
-    aboutText1 : `I'm a DevOps Engineer from Delhi, India, working in the Software Engineering field and web development.
-          Streamlining infrastructure automation and ensuring seamless CI/CD pipelines, I empower development teams
-          with reliable, scalable, and efficient deployment solutions.`,
+    aboutText1 : `I'm a DevOps Engineer based in Noida, India, working at Paytm where I manage DevOps operations across on-premise and AWS cloud infrastructure. I specialize in CI/CD pipelines, Kubernetes orchestration, and cloud-native deployments.`,
     
-    aboutText2 : `My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-          Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is
-          to bring across your message and identity in the most creative way. I created web design for many famous
-          brand companies.`,
+    aboutText2 : `I build reliable, automated deployment solutions using tools like Jenkins, Docker, Kubernetes, and GitHub Actions. I'm passionate about infrastructure reliability, observability, and developer productivity.`,
     
     serviceList : [
         {
-            title: 'DevOps',
-            description: 'Efficient and Stable Pipeline and Script made at a professional level.',
+            title: 'CI/CD & Pipelines',
+            description: 'Building and maintaining Jenkins, GitHub Actions, and GitLab CI/CD pipelines for automated deployments.',
             icon: 'icon-1',
         },
         {
-            title: 'Cloud',
-            description: 'Robust and scalable cloud architecture crafted with expertise, leveraging AWS services for optimal performance and reliability.',
+            title: 'Cloud (AWS)',
+            description: 'Managing AWS infrastructure including EC2, VPC, S3, IAM, CloudWatch, and API Gateway for production microservices.',
             icon: 'icon-2',
         },
         {
-            title: 'Data Structure and Algorithms',
-            description: 'Mastering core programming languages and algorithms to deliver high-performance, efficient, and innovative software solutions.',
+            title: 'Containerization & Orchestration',
+            description: 'Running and troubleshooting Docker containers and Kubernetes clusters including Helm, ingress, and pod management.',
             icon: 'icon-3',
         },
         {
-            title: 'Development',
-            description: 'High-quality development of APIs at the professional level.',
+            title: 'Monitoring & Logging',
+            description: 'Setting up Prometheus, Grafana, Loki, and ELK Stack dashboards for observability and production diagnostics.',
             icon: 'icon-4',
         },
     ],

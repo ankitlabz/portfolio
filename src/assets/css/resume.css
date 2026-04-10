@@ -1,25 +1,33 @@
 /* Resume: high-contrast external link + embedded preview */
 
+.resume {
+  overflow: visible;
+}
+
 .resume-box {
   position: relative;
+  overflow: visible;
 }
 
 .resume-toolbar {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   justify-content: flex-end;
   gap: 10px;
   margin-bottom: 16px;
+  position: relative;
+  z-index: 5;
+  overflow: visible;
 }
 
 .resume-redirect-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  min-height: 44px;
-  padding: 10px 20px;
+  gap: 12px;
+  min-height: 48px;
+  padding: 12px 18px 12px 14px;
   border-radius: 12px;
   font-size: var(--fs-6);
   font-weight: var(--fw-600);
@@ -30,6 +38,9 @@
   box-shadow: 0 4px 14px hsla(45, 80%, 40%, 0.25);
   text-decoration: none;
   transition: var(--transition-1);
+  box-sizing: border-box;
+  overflow: visible;
+  line-height: 1.2;
 }
 
 .resume-redirect-btn:hover {
@@ -45,13 +56,35 @@
   outline-offset: 3px;
 }
 
-.resume-redirect-btn__icon {
-  font-size: 1.25rem;
+/* Fixed box so the open-arrow icon is never clipped */
+.resume-redirect-btn__icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   flex-shrink: 0;
+  color: hsl(240, 8%, 12%);
+}
+
+.resume-redirect-btn__icon-wrap ion-icon {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+  --ionicon-stroke-width: 52px;
+}
+
+.resume-redirect-btn__label {
+  flex: 1;
+  text-align: left;
 }
 
 .resume-frame-wrap {
   position: relative;
+  z-index: 1;
   width: 100%;
   border-radius: 16px;
   overflow: hidden;
@@ -67,4 +100,15 @@
   min-height: 600px;
   border: none;
   vertical-align: top;
+}
+
+@media (max-width: 480px) {
+  .resume-toolbar {
+    justify-content: stretch;
+  }
+
+  .resume-redirect-btn {
+    width: 100%;
+    justify-content: flex-start;
+  }
 }

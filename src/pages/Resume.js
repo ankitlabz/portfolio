@@ -26,8 +26,10 @@ const Resume = () => {
             rel="noopener noreferrer"
             className="resume-redirect-btn"
           >
-            <IonIcon icon={openOutline} className="resume-redirect-btn__icon" />
-            <span>Open in Google Drive</span>
+            <span className="resume-redirect-btn__icon-wrap" aria-hidden="true">
+              <IonIcon icon={openOutline} />
+            </span>
+            <span className="resume-redirect-btn__label">Open in Google Drive</span>
           </a>
         </div>
 

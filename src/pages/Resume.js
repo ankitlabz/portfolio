@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { IonIcon } from "@ionic/react";
-import { openOutline } from "ionicons/icons";
 import LoadingSpinner from "../components/LoadingSpinner";
 import resumeConfig from "../config/resumeConfig";
 import "../assets/css/resume.css";
@@ -19,20 +17,6 @@ const Resume = () => {
       </header>
 
       <section className="resume-box">
-        <div className="resume-toolbar">
-          <a
-            href={resumeConfig.viewUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="resume-redirect-btn"
-          >
-            <span className="resume-redirect-btn__icon-wrap" aria-hidden="true">
-              <IonIcon icon={openOutline} />
-            </span>
-            <span className="resume-redirect-btn__label">Open in Google Drive</span>
-          </a>
-        </div>
-
         {loading && <LoadingSpinner />}
 
         <figure style={{ display: loading ? "none" : "block", margin: 0 }}>

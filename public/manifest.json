@@ -1,7 +1,7 @@
 {
-  "short_name": "Manish Kumar",
-  "name": "Manish Kumar | DevOps Engineer Portfolio",
-  "description": "Portfolio website of Manish Kumar, a DevOps Engineer specializing in cloud infrastructure, CI/CD, and automation solutions",
+  "short_name": "Ankit Pandey",
+  "name": "Ankit Pandey | DevOps Engineer",
+  "description": "Portfolio website of Ankit Pandey, a DevOps Engineer specializing in cloud infrastructure, CI/CD, and automation solutions",
   "icons": [
     {
       "src": "favicon.ico",
@@ -36,12 +36,12 @@
     {
       "name": "About Me",
       "url": "/#/",
-      "description": "Learn more about Manish Kumar"
+      "description": "Learn more about Ankit Pandey"
     },
     {
-      "name": "Portfolio",
-      "url": "/#/portfolio",
-      "description": "View my DevOps projects and work"
+      "name": "Certificates",
+      "url": "/#/certificates",
+      "description": "AWS and internship certificates"
     },
     {
       "name": "Contact",

@@ -12,8 +12,8 @@ const navComponents = [
       to: "/resume",
     },
     {
-      page: "Portfolio",
-      to: "/portfolio",
+      page: "Certificates",
+      to: "/certificates",
     },
     {
       page: "Project",

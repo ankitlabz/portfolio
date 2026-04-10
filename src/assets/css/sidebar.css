@@ -22,6 +22,13 @@
   border-radius: 20px;
 }
 
+.avatar-box img {
+  width: 96px;
+  height: auto;
+  border-radius: inherit;
+  display: block;
+}
+
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
@@ -171,7 +178,7 @@
   }
 
   .avatar-box img {
-    width: 120px;
+    width: 140px;
   }
 
   .info-content .name {
@@ -250,7 +257,7 @@
   }
 
   .avatar-box img {
-    width: 150px;
+    width: 176px;
   }
 
   .info-content .name {

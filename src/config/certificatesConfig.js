@@ -10,18 +10,11 @@ const certificatesConfig = {
       link: null,
     },
     {
-      useIcon: true,
-      title: "Paytm — Internship Certificate",
+      image: "paytm-internship-certificate.png",
+      title: "Paytm — Training & Internship Certificate",
       category: "Internship",
       detail:
-        "DevOps Engineer Intern · Internship completion certificate (PDF on Google Drive)",
-      link: "https://drive.google.com/file/d/19s5sacmgzIVwyz7mxxReDKyGomasgBbP/view?usp=sharing",
-    },
-    {
-      useIcon: true,
-      title: "Paytm — Relieving Letter",
-      category: "Internship",
-      detail: "DevOps Engineer Intern · Official relieving letter (PDF on Google Drive)",
+        "One97 Communications (Paytm) · Jul 24, 2025 – Jan 26, 2026 · Tech–Non Dev, DevOps · Trainee T4451",
       link: "https://drive.google.com/file/d/19s5sacmgzIVwyz7mxxReDKyGomasgBbP/view?usp=sharing",
     },
   ],

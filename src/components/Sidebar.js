@@ -36,7 +36,8 @@ const Sidebar = () => {
           <img
             src={personalConfig.avatar}
             alt={personalConfig.name}
-            width="80"
+            width="112"
+            height="112"
           />
         </figure>
 

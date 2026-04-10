@@ -1,7 +1,11 @@
 import React, { useState, useEffect, useCallback } from "react";
 import certificatesConfig from "../config/certificatesConfig";
 import { IonIcon } from "@ionic/react";
-import { documentTextOutline, eyeOutline } from "ionicons/icons";
+import {
+  documentTextOutline,
+  eyeOutline,
+  chevronBackOutline,
+} from "ionicons/icons";
 import "../assets/css/portfolio.css";
 
 function driveViewToPreview(url) {
@@ -149,17 +153,22 @@ const CertificateLightbox = ({ cert, onClose }) => {
         aria-label="Close full view"
       />
       <div className="certificate-lightbox__panel">
-        <h2 id="certificate-lightbox-title" className="certificate-lightbox__title">
-          {cert.title}
-        </h2>
-        <button
-          type="button"
-          className="certificate-lightbox__close"
-          onClick={onClose}
-          aria-label="Close"
-        >
-          ×
-        </button>
+        <div className="certificate-lightbox__header">
+          <button
+            type="button"
+            className="certificate-lightbox__back"
+            onClick={onClose}
+          >
+            <IonIcon icon={chevronBackOutline} />
+            <span>Back</span>
+          </button>
+          <h2
+            id="certificate-lightbox-title"
+            className="certificate-lightbox__title"
+          >
+            {cert.title}
+          </h2>
+        </div>
         <div className="certificate-lightbox__body">
           {cert.image ? (
             <img
@@ -174,16 +183,6 @@ const CertificateLightbox = ({ cert, onClose }) => {
             </p>
           )}
         </div>
-        {cert.link ? (
-          <a
-            href={cert.link}
-            target="_blank"
-            rel="noreferrer"
-            className="certificate-lightbox__external"
-          >
-            Open in Google Drive
-          </a>
-        ) : null}
       </div>
     </div>
   );

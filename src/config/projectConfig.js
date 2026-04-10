@@ -13,7 +13,7 @@ const projectConfig = {
     },
     {
       id: 2,
-      image: 'gotokart.png',
+      image: 'gotokart-docs.png',
       alt: 'GoToKart documentation',
       category: 'Docs',
       date: '2025-06-01',

@@ -1,4 +1,4 @@
-/* Resume toolbar — high-contrast pop-out link above iframe */
+/* Resume: download + embedded Drive preview */
 
 .resume-box {
   position: relative;
@@ -10,36 +10,41 @@
   align-items: center;
   justify-content: flex-end;
   gap: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
-.resume-popout-link {
+.resume-download-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 16px;
-  border-radius: 12px;
+  padding: 8px 14px;
+  border-radius: 10px;
   font-size: var(--fs-7);
   font-weight: var(--fw-500);
-  color: var(--eerie-black-2);
-  background: var(--orange-yellow-crayola);
-  border: 1px solid hsla(45, 100%, 72%, 0.35);
-  box-shadow: var(--shadow-2);
+  color: var(--light-gray);
+  background: var(--jet);
+  border: 1px solid hsla(0, 0%, 100%, 0.08);
   text-decoration: none;
   transition: var(--transition-1);
 }
 
-.resume-popout-link:hover {
-  color: var(--eerie-black-2);
-  background: hsl(45, 100%, 78%);
-  transform: translateY(-1px);
+.resume-download-btn:hover {
+  color: var(--orange-yellow-crayola);
+  border-color: hsla(45, 100%, 72%, 0.35);
+  background: hsl(240, 2%, 18%);
 }
 
-.resume-popout-link:focus-visible {
+.resume-download-btn:focus-visible {
   outline: 2px solid var(--orange-yellow-crayola);
-  outline-offset: 3px;
+  outline-offset: 2px;
 }
 
+.resume-download-btn__icon {
+  font-size: 1.1rem;
+  color: var(--orange-yellow-crayola);
+}
+
+/* Embedded viewer — subtle depth so Drive’s built-in pop-out stays primary */
 .resume-frame-wrap {
   position: relative;
   width: 100%;
@@ -48,6 +53,7 @@
   border: 1px solid var(--jet);
   background: hsl(240, 2%, 10%);
   min-height: 600px;
+  box-shadow: var(--shadow-4), 0 0 0 1px hsla(0, 0%, 100%, 0.04);
 }
 
 .resume-frame-wrap iframe {

@@ -50,7 +50,7 @@ To run this project locally:
    npm start
    ```
 
-5. Open your browser and visit `http://localhost:3000` to view the site.
+5. Open your browser and visit `https://ankitlabz.github.io/portfolio/#/` to view the site.
 
 ## Usage
 

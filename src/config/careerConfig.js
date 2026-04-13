@@ -30,7 +30,7 @@ export const skillsConfig = [
     level: "85",
   },
   {
-    name: "Cloud — AWS (EC2, S3, IAM, CloudWatch)",
+    name: "Cloud — AWS (EC2, S3, IAM, CloudWatch, SSM, EventBridge)",
     level: "80",
   },
   {

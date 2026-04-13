@@ -8,8 +8,8 @@ const projectConfig = {
       category: 'Full Stack & DevOps',
       date: '2025-06-01',
       title: 'GoToKart — E-Commerce Platform',
-      text: 'Full-stack e-commerce platform built with Spring Boot, MariaDB, and JavaScript. Deployed on AWS EC2 with Docker Compose, Nginx reverse proxy, GitHub Actions CI/CD, and AWS SSM for zero-touch deployments. Organization: github.com/orgs/gotokart.',
-      link: 'http://34.227.190.40/',
+      text: 'Full-stack e-commerce (Spring Boot, MariaDB 10.11, JS) on AWS EC2: instance gotokart-ecommerce (i-0dcb2819d4c3539f5), t3.small in us-east-1, public 34.229.50.171, SSM Session Manager access, EventBridge 9 AM–9 PM IST, 20 GB EBS (~5.9 GB used). Docker Compose — Nginx :80, Spring Boot :8080, MariaDB :3306 on infra_gotokart-net; DB volume infra_mysql-data. GitHub Actions + SSM deploys.',
+      link: 'http://34.229.50.171/',
     },
     {
       id: 2,

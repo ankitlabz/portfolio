@@ -11,7 +11,7 @@ const aboutConfig = {
         },
         {
             title: 'Cloud (AWS)',
-            description: 'Managing AWS infrastructure including EC2, VPC, S3, IAM, CloudWatch, and API Gateway for production microservices.',
+            description: 'Managing AWS infrastructure including EC2, VPC, S3, IAM, CloudWatch, SSM Session Manager, EventBridge, and API Gateway for production microservices.',
             icon: 'icon-2',
         },
         {

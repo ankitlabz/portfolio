@@ -1,4 +1,4 @@
-# Manish Kumar - React Portfolio Website
+# React Portfolio Website
 
 Welcome to the updated version of my personal portfolio website, now built with **React.js**! This project is designed to showcase my skills, projects, and provide easy ways to get in touch with me.
 

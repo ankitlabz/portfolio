@@ -12,10 +12,10 @@
  *
  * Optional: REACT_APP_RESUME_EMBED_URL in .env / CI.
  */
-const RESUME_DRIVE_FILE_ID = "1jDlFOy0XG7KSv2KGOSE5PQ_cXKAuUQeO";
+const RESUME_DRIVE_FILE_ID = "1ZsczXxkR-Zw4_iUGwTztarUpkt1jwIy9";
 
 /** Set to "2", "3", … if you need to force browsers to reload the embed after a Drive update. */
-const EMBED_CACHE_BUST = "2";
+const EMBED_CACHE_BUST = "3";
 
 const previewBase = `https://drive.google.com/file/d/${RESUME_DRIVE_FILE_ID}/preview`;
 const defaultEmbedUrl =

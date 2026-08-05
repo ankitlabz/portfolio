@@ -1,6 +1,14 @@
 const certificatesConfig = {
-  categories: ["All", "AWS", "Internship"],
+  categories: ["All", "AWS", "Internship", "Award"],
   certificates: [
+    {
+      image: "paytm-rockstar-award.png",
+      title: "Paytm — Rockstar Award",
+      category: "Award",
+      detail:
+        "One97 Communications (Paytm) · Rewards & Recognition · Awarded Jun 2026 · Recognized for extraordinary performance and contributions to production DevOps infrastructure",
+      link: null,
+    },
     {
       image: "aws-architecting-on-aws.png",
       title: "Architecting on AWS",
